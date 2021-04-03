@@ -1,0 +1,26 @@
+buildscript {
+    apply from: "versions.gradle"
+    ext {
+        versions.kotlin = '1.4.32'
+        versions.kotlin = '1.4.32'
+    }
+    repositories {
+        google()
+        jcenter()
+    }
+    dependencies {
+        classpath deps.gradle
+        classpath deps.jetbrains.kotlin_gradle_plugin
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

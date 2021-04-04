@@ -1,16 +1,21 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.StarWars" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+    <style name="Theme.StarWars" parent="Theme.MaterialComponents.Light.NoActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/purple_500</item>
-        <item name="colorPrimaryVariant">@color/purple_700</item>
-        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorPrimary">@color/grey_EBEBEB</item>
+        <item name="colorPrimaryVariant">@color/grey_EBEBEB_tr50</item>
+        <item name="colorOnPrimary">@color/black_161615</item>
         <!-- Secondary brand color. -->
-        <item name="colorSecondary">@color/teal_200</item>
-        <item name="colorSecondaryVariant">@color/teal_700</item>
-        <item name="colorOnSecondary">@color/black</item>
+        <item name="colorSecondary">@color/yellow_FFC107</item>
+        <item name="colorSecondaryVariant">@color/orange_bf3200</item>
+        <item name="colorOnSecondary">@color/black_161615</item>
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
-        <!-- Customize your theme here. -->
+        <!-- Color Surface -->
+        <item name="colorSurface">@color/white</item>
+        <item name="colorOnSurface">?attr/colorOnPrimary</item>
+        <item name="colorError">?attr/colorSecondaryVariant</item>
+        <!-- Shapes -->
+        <item name="materialCardViewStyle">@style/Widget.App.CardView</item>
     </style>
 </resources>

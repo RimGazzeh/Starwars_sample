@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="6dp"
+    app:cardElevation="6dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/itemMovieGuidelineVStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="9dp" />
+
+        <TextView
+            android:id="@+id/itemMovieTitle"
+            style="@style/TextStyleLight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/TextSizeTitle"
+            app:layout_constraintBottom_toBottomOf="@+id/itemMovieReleaseDate"
+            app:layout_constraintStart_toStartOf="@+id/itemMovieGuidelineVStart"
+            app:layout_constraintTop_toTopOf="@+id/itemMovieReleaseDateText"
+            tools:text="A New Hope" />
+
+        <TextView
+            android:id="@+id/itemMovieReleaseDateText"
+            style="@style/TextStyleLight.SmallTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/movie_release_date"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintStart_toStartOf="@+id/itemMovieReleaseDate"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/itemMovieReleaseDate"
+            style="@style/TextStyleLight.SmallDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/itemMovieReleaseDateText"
+            tools:text="1977/05/25" />
+
+        <TextView
+            android:id="@+id/itemMovieDirectorText"
+            style="@style/TextStyleLight.SmallTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/movie_director"
+            app:layout_constraintStart_toStartOf="@+id/itemMovieGuidelineVStart"
+            app:layout_constraintTop_toBottomOf="@+id/itemMovieTitle" />
+
+        <TextView
+            android:id="@+id/itemMovieDirector"
+            style="@style/TextStyleLight.SmallDetail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="12dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            app:layout_constraintEnd_toStartOf="@+id/itemMovieProducerText"
+            app:layout_constraintStart_toStartOf="@+id/itemMovieGuidelineVStart"
+            app:layout_constraintTop_toBottomOf="@+id/itemMovieDirectorText"
+            tools:text="George Lucas" />
+
+        <TextView
+            android:id="@+id/itemMovieProducerText"
+            style="@style/TextStyleLight.SmallTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="65dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/movie_producer"
+            app:layout_constraintStart_toEndOf="@+id/itemMovieDirectorText"
+            app:layout_constraintTop_toBottomOf="@+id/itemMovieTitle" />
+
+        <TextView
+            android:id="@+id/itemMovieProducer"
+            style="@style/TextStyleLight.SmallDetail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="40dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            app:layout_constraintEnd_toStartOf="@+id/itemMovieReleaseDate"
+            app:layout_constraintStart_toStartOf="@+id/itemMovieProducerText"
+            app:layout_constraintTop_toBottomOf="@+id/itemMovieProducerText"
+            tools:text="Gary Kurtz, Rick McCallum" />
+
+        <TextView
+            android:id="@+id/itemMovieDescription"
+            style="@style/TextStyleLight"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginBottom="21dp"
+            android:ellipsize="end"
+            android:lineSpacingExtra="2sp"
+            android:maxLines="2"
+            android:textSize="@dimen/TextSizeMediumSubTitle"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/itemMovieGuidelineVStart"
+            app:layout_constraintTop_toBottomOf="@+id/itemMovieDirector"
+            tools:text="It is a dark time for the nRebellion. Although the Death  Star has been destroyed....." />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

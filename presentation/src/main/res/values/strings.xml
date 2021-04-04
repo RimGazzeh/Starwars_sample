@@ -3,4 +3,12 @@
     <string name="error_empty_data">Sorry!! Empty data</string>
     <string name="error_operation">Error Operation</string>
     <string name="error_data">Error Data</string>
+    <string name="dashboard_title">Think-it Star Wars</string>
+    <string name="dashboard_total_movies">Total %d Movies</string>
+    <string name="movie_director">Director</string>
+    <string name="movie_producer">Producer</string>
+    <string name="movie_release_date">Release date</string>
+    <string name="movie_opening_craw">Opening craw</string>
+    <string name="movie_created">Created</string>
+    <string name="movie_edited">Edited</string>
 </resources>

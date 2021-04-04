@@ -12,7 +12,7 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Color Surface -->
-        <item name="colorSurface">@color/white</item>
+        <item name="colorSurface">@color/grey_EBEBEB</item>
         <item name="colorOnSurface">?attr/colorOnPrimary</item>
         <item name="colorError">?attr/colorSecondaryVariant</item>
         <!-- Shapes -->

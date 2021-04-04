@@ -4,6 +4,7 @@
     <style name="Widget.App.CardView" parent="Widget.MaterialComponents.CardView">
         <item name="materialThemeOverlay">@style/ThemeOverlay.App.Card</item>
     </style>
+
     <style name="ThemeOverlay.App.Card" parent="">
         <item name="colorSurface">@color/black_161615</item>
         <item name="colorOnSurface">@color/white_F9F9F9_tr94</item>
@@ -11,22 +12,28 @@
     <!-- Texts -->
     <style name="TextStyle" parent="@android:style/Widget.TextView">
         <item name="android:fontFamily">@font/regular_archivo_vf_beta</item>
+    </style>
+
+    <style name="TextStyleLight" parent="TextStyle">
+        <item name="android:fontFamily">@font/regular_archivo_vf_beta</item>
         <item name="android:textColor">@color/white_F9F9F9_tr94</item>
     </style>
 
-    <style name="TextStyle.Headline" parent="TextStyle">
-        <item name="android:textSize">36sp</item>
+    <style name="TextStyleDark" parent="TextStyle">
+        <item name="android:fontFamily">@font/regular_archivo_vf_beta</item>
+        <item name="android:textColor">@color/black_161615</item>
     </style>
-    <style name="TextStyle.Title" parent="TextStyle">
-        <item name="android:textSize">24sp</item>
+
+    <style name="TextStyleLight.SmallTitle" parent="TextStyleLight">
+        <item name="android:textSize">@dimen/TextSizeSmallSubTitle</item>
     </style>
-    <style name="TextStyle.SmallSubTitle" parent="TextStyle">
-        <item name="android:textSize">9sp</item>
+    <style name="TextStyleLight.SmallDetail" parent="TextStyleLight">
+        <item name="android:textSize">@dimen/TextSizeMediumSubTitle</item>
     </style>
-    <style name="TextStyle.MediumSubTitle" parent="TextStyle">
-        <item name="android:textSize">13sp</item>
+    <style name="TextStyleDark.SmallTitle" parent="TextStyleDark">
+        <item name="android:textSize">@dimen/TextSizeMediumSubTitle</item>
     </style>
-    <style name="TextStyle.Description" parent="TextStyle">
-        <item name="android:textSize">14sp</item>
+    <style name="TextStyleDark.SmallDetail" parent="TextStyleDark">
+        <item name="android:textSize">@dimen/TextSizeMediumSubTitle</item>
     </style>
 </resources>

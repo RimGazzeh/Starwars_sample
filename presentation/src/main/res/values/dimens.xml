@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="TextSizeHeadline">36sp</dimen>
+    <dimen name="TextSizeToolbar">25sp</dimen>
+    <dimen name="TextSizeTitle">24sp</dimen>
+    <dimen name="TextSizeSmallSubTitle">9sp</dimen>
+    <dimen name="TextSizeMediumSubTitle">13sp</dimen>
+    <dimen name="TextSizeDescription">14sp</dimen>
+</resources>

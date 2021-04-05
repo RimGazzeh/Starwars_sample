@@ -42,6 +42,7 @@ dependencies {
     api deps.network.stetho
     testImplementation deps.test.junit
     androidTestImplementation deps.test.android_junit
-    testImplementation(deps.test.mockwebserver)
-    androidTestImplementation deps.test.arch_core
+    testImplementation deps.test.arch_core
+    testImplementation deps.test.mockwebserver
+    testImplementation deps.test.googleTruth
 }

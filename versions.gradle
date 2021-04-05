@@ -30,7 +30,8 @@ ext.versions = [
         'moshi'           : '1.11.0',
         'coil'            : '1.1.1',
         'navigation'      : '2.3.3',
-        'mockwebserver'      : '4.9.0',
+        'mockwebserver'   : '4.9.0',
+        'googleTruth'     : '1.1.2',
 ]
 
 ext.deps = [
@@ -68,11 +69,12 @@ ext.deps = [
                 compiler: "com.google.dagger:dagger-compiler:${versions.dagger}",
         ],
         'test'     : [
-                junit        : "junit:junit:${versions.junit}",
-                android_junit: "androidx.test.ext:junit:${versions.android_junit}",
-                espresso     : "androidx.test.espresso:espresso-core:${versions.espresso}",
-                arch_core    : "androidx.arch.core:core-testing:${versions.arch_core}",
-                mockwebserver    : "com.squareup.okhttp3:mockwebserver:${versions.mockwebserver}"
+                junit          : "junit:junit:${versions.junit}",
+                android_junit  : "androidx.test.ext:junit:${versions.android_junit}",
+                espresso       : "androidx.test.espresso:espresso-core:${versions.espresso}",
+                arch_core      : "androidx.arch.core:core-testing:${versions.arch_core}",
+                mockwebserver  : "com.squareup.okhttp3:mockwebserver:${versions.mockwebserver}",
+                googleTruth    : "com.google.truth:truth:${versions.googleTruth}"
         ],
         'coil'     : "io.coil-kt:coil:${versions.coil}"
 ]

@@ -51,7 +51,6 @@ dependencies {
     implementation deps.androidx.navigation.fragment
     implementation deps.androidx.navigation.navigation_ui
     implementation deps.androidx.fragment
-    implementation deps.coil
     implementation deps.dagger.common
     kapt deps.dagger.compiler
     testImplementation deps.test.junit

@@ -15,11 +15,6 @@ fun okHttpBuilder(): OkHttpClient {
         .connectTimeout(IO_TIMEOUT, TimeUnit.SECONDS)
         .writeTimeout(IO_TIMEOUT, TimeUnit.SECONDS)
         .readTimeout(IO_TIMEOUT, TimeUnit.SECONDS)
-        .addInterceptor { chain ->
-            val request = chain.request().newBuilder()
-                .build()
-            chain.proceed(request)
-        }
     if (BuildConfig.DEBUG)
         client.addNetworkInterceptor(StethoInterceptor())
     return client.build()

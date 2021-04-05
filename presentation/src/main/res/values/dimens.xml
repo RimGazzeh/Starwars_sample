@@ -6,4 +6,6 @@
     <dimen name="TextSizeSmallSubTitle">9sp</dimen>
     <dimen name="TextSizeMediumSubTitle">13sp</dimen>
     <dimen name="TextSizeDescription">14sp</dimen>
+
+    <dimen name="HeaderHeight">220dp</dimen>
 </resources>

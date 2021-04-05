@@ -5,5 +5,5 @@ package com.rim.domain.models.dao.response
  **/
 data class EMoviesResponse(
     val count: Int,
-    val result: List<EMovie>
+    val results: List<EMovie>
 )

@@ -4,6 +4,7 @@ import com.rim.starwars.di.modules.NetworkModule
 import com.rim.starwars.di.modules.RepositoryModule
 import com.rim.starwars.di.modules.UseCasesModule
 import com.rim.starwars.di.modules.ViewModelModule
+import com.rim.starwars.features.dashboard.DashboardFragment
 import dagger.Component
 import javax.inject.Singleton
 
@@ -14,4 +15,6 @@ import javax.inject.Singleton
 @Component(
     modules = [ViewModelModule::class, RepositoryModule::class, NetworkModule::class, UseCasesModule::class]
 )
-interface AppComponent
+interface AppComponent{
+    fun inject(dashboardFragment: DashboardFragment)
+}

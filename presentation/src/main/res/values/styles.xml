@@ -15,12 +15,15 @@
     </style>
 
     <style name="TextStyleLight" parent="TextStyle">
-        <item name="android:fontFamily">@font/regular_archivo_vf_beta</item>
         <item name="android:textColor">@color/white_F9F9F9_tr94</item>
     </style>
 
+    <style name="TextStyleError" parent="TextStyle">
+        <item name="android:textColor">?attr/colorError</item>
+        <item name="android:textSize">@dimen/TextSizeTitle</item>
+    </style>
+
     <style name="TextStyleDark" parent="TextStyle">
-        <item name="android:fontFamily">@font/regular_archivo_vf_beta</item>
         <item name="android:textColor">@color/black_161615</item>
     </style>
 

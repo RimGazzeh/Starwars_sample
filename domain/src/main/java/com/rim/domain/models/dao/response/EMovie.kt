@@ -19,8 +19,11 @@ data class EMovie(
     val starShips: List<String>,
     val title: String,
     val url: String,
-    val vehicles: List<String>
+    val vehicles: List<String>,
+    val created: String,
+    val edited: String
 )
 
-fun EMovie.toEntity() = Movie(title, producer, director, release_date, opening_crawl)
+fun EMovie.toEntity() =
+    Movie(title, producer, director, release_date, opening_crawl.replace("[\\r\\n]".toRegex(), " "), created, edited)
 fun List<EMovie>.toEntity() = map { it.toEntity() }

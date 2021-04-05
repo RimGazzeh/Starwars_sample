@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     app:cardElevation="6dp"
     android:layout_marginBottom="6dp"
-    android:layout_height="220dp">
+    android:layout_height="@dimen/HeaderHeight">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"

@@ -26,4 +26,26 @@
         app:layout_constraintTop_toBottomOf="@+id/dashboardToolbar"
         tools:listitem="@layout/item_movie" />
 
+    <ProgressBar
+        android:id="@+id/dashboardMoviesLoading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/HeaderHeight"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dashboardToolbar" />
+
+    <TextView
+        android:id="@+id/dashboardMoviesErrorMsg"
+        style="@style/TextStyleError"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/HeaderHeight"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dashboardToolbar" />
 </androidx.constraintlayout.widget.ConstraintLayout>

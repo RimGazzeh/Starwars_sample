@@ -11,8 +11,8 @@ import javax.inject.Inject
  **/
 abstract class BaseViewModelFragment<out T : BaseViewModel> (@LayoutRes layoutId: Int) : BaseFragment(layoutId){
     @Inject
-    lateinit var viewModelFactory: DaggerViewModelFactory
-    protected abstract val viewModel: T?
+    lateinit var mViewModelFactory: DaggerViewModelFactory
+    protected abstract val mViewModel: T?
     protected inline fun <reified VM : ViewModel> injectViewModel(): Lazy<VM> =
-        activityViewModels { viewModelFactory }
+        activityViewModels { mViewModelFactory }
 }

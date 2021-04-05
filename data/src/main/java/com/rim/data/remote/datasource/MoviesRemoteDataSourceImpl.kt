@@ -12,5 +12,5 @@ import com.rim.domain.models.entities.Movie
  **/
 class MoviesRemoteDataSourceImpl(private val apiServices: ApiServices) : IMoviesDataSource {
     override suspend fun getMovies(): CallResult<List<Movie>> =
-        apiServices.getAllMovies().run { this.getResult { this.result.toEntity() } }
+        apiServices.getAllMovies().run { this.getResult { this.results.toEntity() } }
 }
